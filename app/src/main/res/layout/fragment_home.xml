@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".ui.home.HomeFragment">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:id="@+id/imgLogo"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/dps12"
+            android:contentDescription="@string/logo_gapo"
+            android:gravity="center_vertical"
+            android:src="@drawable/logo_app" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/dps10"
+            android:layout_toEndOf="@id/imgLogo"
+            android:fontFamily="@font/sf_pro_text_semibold"
+            android:gravity="center"
+            android:text="@string/name_logo"
+            android:textColor="#26282C"
+            android:textSize="16sp"
+            android:textStyle="normal"
+            tools:ignore="RelativeOverlap" />
+
+        <ImageView
+            android:id="@+id/imgMenu"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="@dimen/dps10"
+            android:layout_marginEnd="@dimen/dps12"
+            android:contentDescription="@string/menu"
+            android:gravity="center_vertical"
+            android:src="@drawable/ic_menu" />
+
+        <ImageView
+            android:id="@+id/imgSearch"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/dps10"
+            android:layout_toStartOf="@id/imgMenu"
+            android:contentDescription="@string/search"
+            android:gravity="center_vertical"
+            android:src="@drawable/ic_search" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#f5f5f5" />
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rcl_v"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        android:orientation="vertical"
+        />
+
+<!--    <androidx.core.widget.NestedScrollView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent">-->
+
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:orientation="vertical">-->
+<!--            -->
+
+<!--            <include layout="@layout/post" />-->
+
+<!--            <View-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="8dp"-->
+<!--                android:background="#F1F2F4" />-->
+
+<!--            <include layout="@layout/post_view_type" />-->
+
+
+<!--            -->
+
+<!--        </LinearLayout>-->
+
+
+<!--    </androidx.core.widget.NestedScrollView>-->
+
+
+</LinearLayout>

@@ -1,0 +1,41 @@
+<resources>
+    <string name="app_name">GapoTest</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="logo_gapo">Logo Gapo</string>
+    <string name="menu">menu</string>
+    <string name="search">search</string>
+    <string name="what_do_you_want_to_share">Bạn muốn chia sẻ điều gì?</string>
+    <string name="live_stream">Live Stream</string>
+    <string name="nh_video">Ảnh/Video</string>
+    <string name="b_nh_ch_n">Bình chọn</string>
+    <string name="user_name">Nguyễn Quang Khôi</string>
+    <string name="todo">TODO</string>
+    <string name="avatar_user">avatar user</string>
+    <string name="_1_ph_t_tr_c">1 phút trước</string>
+    <string name="lorem">Ta thường nghe: Kỷ Tín đem mình chết thay, cứu thoát cho Cao Đế; Do Vu chìa lưng chịu giáo, che chở cho Chiêu Vương; Dự Nhượng nuốt than, báo thù cho chủ; Thân Khoái chặt tay để cứu nạn cho nước...<font color='#30A960'>Xem thêm</font></string>
+    <string name="_105">105</string>
+    <string name="_26">26</string>
+    <string name="cmt">Bình luận</string>
+    <string name="_5">5</string>
+    <string name="share">Chia sẻ</string>
+    <string name="like">Thích</string>
+    <string name="ng_th_lan_ph_ng">Ngô Thị Lan Phượng</string>
+    <string name="tr_i_h_m_nay_nhi_u_m_y_c_c">Trời hôm nay nhiều mây cực!</string>
+    <string name="_2_ph_t">2 phút</string>
+    <string name="answer">Trả lời</string>
+    <string name="xem_2_b_nh_lu_n_tr_c">Xem 2 bình luận trước...</string>
+    <string name="name1">Đặng Thiều</string>
+    <string name="_cmt">Đi vào rừng một mình khôn...</string>
+    <string name="name2">Đức Knight</string>
+    <string name="send_sticker">Đã gửi một nhãn dán</string>
+    <string name="name_logo">Gapo</string>
+    <string name="write_comment">Viết bình luận</string>
+    <string name="lorem1">Ac egestas faucibus nulla vestibulum lorem diam neque dolor augue. Praesent augue donec purus nunc integer. Lacus pulvinar tempus blandit posuere volutpat ut sed nisl felis. Dolor porta nec malesuada posuere faucibus. Consectetur pharetra, id vel feugiat hendrerit.</string>
+    <string name="crazy_cat">Mèo Rồ</string>
+    <string name="owo">Ơ ơ...</string>
+    <string name="lorem3">Dictum in bibendum nec aliquet molestie diam purus. Ut non nulla adipiscing convallis. Faucibus ipsum rutrum fusce fames.</string>
+    <string name="tv1">Đó là tất cả bài viết của tổ chức bạn.</string>
+    <string name="tv2">Làm mới lại để cập nhật bài viết mới</string>
+    <string name="refresh_page">Tải lại trang</string>
+</resources>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="sps14">14sp</dimen>
+    <dimen name="dps10">10dp</dimen>
+    <dimen name="circle">1000dp</dimen>
+    <dimen name="sps16">16sp</dimen>
+    <dimen name="dps12">12dp</dimen>
+    <dimen name="dps18">18dp</dimen>
+    <dimen name="dps8">8dp</dimen>
+    <dimen name="dps40">40dp</dimen>
+    <dimen name="dps6">6dp</dimen>
+    <dimen name="dps22">22dp</dimen>
+    <dimen name="dps16">16dp</dimen>
+    <dimen name="sps12">12sp</dimen>
+    <dimen name="dps24">24dp</dimen>
+</resources>

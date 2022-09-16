@@ -1,0 +1,442 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp">
+
+            <ImageView
+                android:id="@+id/imgUserPost"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="@dimen/dps12"
+                android:contentDescription="@string/avatar_user"
+                android:src="@drawable/avatar1"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tvNameUser"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dps8"
+                android:layout_marginEnd="@dimen/dps12"
+                android:text="@string/user_name"
+                android:textColor="#26282C"
+                android:textSize="@dimen/sps14"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toStartOf="@id/imgMore"
+                app:layout_constraintStart_toEndOf="@id/imgUserPost"
+                app:layout_constraintTop_toTopOf="@id/imgUserPost" />
+
+            <ImageView
+                android:id="@+id/imgMore"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_marginEnd="@dimen/dps12"
+                android:contentDescription="@string/todo"
+                android:src="@drawable/ic_more_hori"
+                app:layout_constraintBottom_toBottomOf="@id/tvNameUser"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@id/tvNameUser" />
+
+            <TextView
+                android:id="@+id/tvCreatedTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/_1_ph_t_tr_c"
+                android:textSize="@dimen/sps12"
+                app:layout_constraintStart_toStartOf="@id/tvNameUser"
+                app:layout_constraintTop_toBottomOf="@id/tvNameUser" />
+
+            <ImageView
+                android:id="@+id/imgDot"
+                android:layout_width="@dimen/dps10"
+                android:layout_height="@dimen/dps10"
+                android:layout_marginStart="@dimen/dps6"
+                android:contentDescription="@string/todo"
+                android:src="@drawable/ic_dot_point"
+                app:layout_constraintBottom_toBottomOf="@id/tvCreatedTime"
+                app:layout_constraintStart_toEndOf="@id/tvCreatedTime"
+                app:layout_constraintTop_toTopOf="@id/tvCreatedTime" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_marginStart="@dimen/dps6"
+                android:contentDescription="@string/todo"
+                android:src="@drawable/ic_privacy"
+                app:layout_constraintBottom_toBottomOf="@id/tvCreatedTime"
+                app:layout_constraintStart_toEndOf="@id/imgDot"
+                app:layout_constraintTop_toTopOf="@id/tvCreatedTime" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/sf_pro_text_regular"
+            android:paddingStart="@dimen/dps12"
+            android:paddingEnd="@dimen/dps12"
+            android:text="@string/lorem3"
+            android:textColor="#26282C"
+            android:textSize="@dimen/sps14" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="240dp"
+            android:layout_marginTop="@dimen/dps12"
+            android:scaleType="fitXY"
+            android:adjustViewBounds="true"
+            android:src="@drawable/pic7"
+            android:contentDescription="@string/todo" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize"
+            android:paddingStart="@dimen/dps12"
+            android:paddingEnd="@dimen/dps12">
+
+            <LinearLayout
+                android:id="@+id/reaction"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:contentDescription="@string/todo"
+                    android:src="@drawable/like" />
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:contentDescription="@string/todo"
+                    android:src="@drawable/clap" />
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:contentDescription="@string/todo"
+                    android:src="@drawable/heart" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="2dp"
+                    android:fontFamily="@font/sf_pro_text_regular"
+                    android:text="@string/_105"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentEnd="true"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                tools:ignore="RelativeOverlap">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="4dp"
+                    android:fontFamily="@font/sf_pro_text_regular"
+                    android:text="@string/_26"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/dps10"
+                    android:fontFamily="@font/sf_pro_text_regular"
+                    android:text="@string/cmt"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="4dp"
+                    android:fontFamily="@font/sf_pro_text_regular"
+                    android:text="@string/_5"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/sf_pro_text_regular"
+                    android:text="@string/share"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginStart="@dimen/dps12"
+            android:layout_marginEnd="@dimen/dps12"
+            android:background="#E9EAEC" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:baselineAligned="false"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:contentDescription="@string/todo"
+                    android:src="@drawable/ic_like" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp"
+                    android:fontFamily="@font/sf_pro_text_semibold"
+                    android:text="@string/like" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:contentDescription="@string/todo"
+                    android:src="@drawable/ic_comment" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp"
+                    android:fontFamily="@font/sf_pro_text_semibold"
+                    android:text="@string/cmt" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:contentDescription="@string/todo"
+                    android:src="@drawable/ic_share" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp"
+                    android:fontFamily="@font/sf_pro_text_semibold"
+                    android:text="@string/share" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginStart="@dimen/dps12"
+            android:layout_marginEnd="@dimen/dps12"
+            android:background="#E9EAEC" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/avatarCmt"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_margin="@dimen/dps12"
+                android:contentDescription="@string/todo"
+                android:src="@drawable/avatar_child2"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <LinearLayout
+                android:id="@+id/layoutCmt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dps10"
+                android:background="@drawable/bg_cmt"
+                android:orientation="vertical"
+                android:padding="@dimen/dps12"
+                app:layout_constraintStart_toEndOf="@id/avatarCmt"
+                app:layout_constraintTop_toTopOf="@id/avatarCmt">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/sf_pro_text_bold"
+                    android:text="@string/crazy_cat"
+                    android:textColor="#26282C"
+                    android:textSize="@dimen/sps16"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/sf_pro_text_regular"
+                    android:text="@string/owo"
+                    android:textColor="#26282C"
+                    android:textSize="@dimen/sps16" />
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/layoutReaction"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dps12"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="@id/layoutCmt"
+                app:layout_constraintTop_toBottomOf="@id/layoutCmt">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dps12"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    tools:ignore="UselessParent">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/sf_pro_text_regular"
+                        android:text="@string/_2_ph_t" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/dps10"
+                        android:fontFamily="@font/sf_pro_text_bold"
+                        android:text="@string/like"
+                        android:textColor="#26282C" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/dps10"
+                        android:fontFamily="@font/sf_pro_text_bold"
+                        android:text="@string/answer"
+                        android:textColor="#26282C" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/avatarUser"
+                android:layout_width="@dimen/dps40"
+                android:layout_height="@dimen/dps40"
+                android:layout_marginTop="@dimen/dps16"
+                android:contentDescription="@string/todo"
+                android:src="@drawable/avatar1"
+                app:layout_constraintEnd_toEndOf="@id/avatarCmt"
+                app:layout_constraintStart_toStartOf="@id/avatarCmt"
+                app:layout_constraintTop_toBottomOf="@id/layoutReaction" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginEnd="@dimen/dps10"
+                android:background="@drawable/bg_edt"
+                android:orientation="horizontal"
+                android:weightSum="6"
+                app:layout_constraintBottom_toBottomOf="@id/avatarUser"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@id/layoutReaction"
+                app:layout_constraintTop_toTopOf="@id/avatarUser">
+
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="4"
+                    android:background="@drawable/bg_edt"
+                    android:hint="@string/write_comment"
+                    android:importantForAutofill="no"
+                    android:inputType="text"
+                    android:paddingStart="@dimen/dps12"
+                    android:paddingEnd="@dimen/dps10" />
+
+                <ImageButton
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/transparent"
+                    android:contentDescription="@string/todo"
+                    android:src="@drawable/ic_camera" />
+
+                <ImageButton
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/transparent"
+                    android:contentDescription="@string/todo"
+                    android:src="@drawable/ic_face_smile" />
+
+
+            </LinearLayout>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dps8"
+            android:background="@color/white" />
+    </LinearLayout>
+
+
+</androidx.core.widget.NestedScrollView>

@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/avatarCmt"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_margin="@dimen/dps12"
+        android:contentDescription="@string/todo"
+        android:src="@drawable/avata_cmt"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <LinearLayout
+        android:id="@+id/layoutCmt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dps10"
+        android:background="@drawable/bg_cmt"
+        android:orientation="vertical"
+        android:padding="@dimen/dps12"
+        app:layout_constraintStart_toEndOf="@id/avatarCmt"
+        app:layout_constraintTop_toTopOf="@id/avatarCmt">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/sf_pro_text_bold"
+            android:text="@string/ng_th_lan_ph_ng"
+            android:textColor="#26282C"
+            android:textSize="@dimen/sps16"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/sf_pro_text_regular"
+            android:text="@string/tr_i_h_m_nay_nhi_u_m_y_c_c"
+            android:textColor="#26282C"
+            android:textSize="@dimen/sps16" />
+
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:contentDescription="@string/todo"
+        android:src="@drawable/ic_badge"
+        app:layout_constraintBottom_toTopOf="@id/layoutCmt"
+        app:layout_constraintEnd_toEndOf="@id/layoutCmt"
+        app:layout_constraintTop_toTopOf="@id/layoutCmt" />
+
+    <LinearLayout
+        android:id="@+id/layoutReaction"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dps12"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@id/layoutCmt"
+        app:layout_constraintTop_toBottomOf="@id/layoutCmt">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dps12"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/sf_pro_text_regular"
+                android:text="@string/_2_ph_t" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dps10"
+                android:fontFamily="@font/sf_pro_text_bold"
+                android:text="@string/like"
+                android:textColor="#26282C" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dps10"
+                android:fontFamily="@font/sf_pro_text_bold"
+                android:text="@string/answer"
+                android:textColor="#26282C" />
+
+            <ImageView
+                android:layout_width="14dp"
+                android:layout_height="14dp"
+                android:layout_marginStart="@dimen/dps10"
+                android:contentDescription="@string/todo"
+                android:src="@drawable/like_cmt" />
+
+            <ImageView
+                android:layout_width="14dp"
+                android:layout_height="14dp"
+                android:layout_marginStart="@dimen/dps6"
+                android:contentDescription="@string/todo"
+                android:src="@drawable/clap" />
+
+            <ImageView
+                android:layout_width="14dp"
+                android:layout_height="14dp"
+                android:layout_marginStart="@dimen/dps6"
+                android:contentDescription="@string/todo"
+                android:src="@drawable/heart" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dps12"
+            android:layout_marginTop="@dimen/dps10"
+            android:fontFamily="@font/sf_pro_text_bold"
+            android:text="@string/xem_2_b_nh_lu_n_tr_c"
+            android:textColor="#737682" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dps12"
+            android:layout_marginTop="@dimen/dps12"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="@dimen/dps24"
+                android:layout_height="@dimen/dps24"
+                android:contentDescription="@string/todo"
+                android:src="@drawable/avatar_child" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:fontFamily="@font/sf_pro_text_bold"
+                android:text="@string/name1"
+                android:textColor="#26282C" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:layout_marginStart="8dp"
+                android:fontFamily="@font/sf_pro_text_regular"
+                android:gravity="center"
+                android:text="@string/_cmt"
+                android:textSize="@dimen/sps12" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dps12"
+            android:layout_marginTop="@dimen/dps12"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="@dimen/dps24"
+                android:layout_height="@dimen/dps24"
+                android:contentDescription="@string/todo"
+                android:src="@drawable/avatar_child1" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:fontFamily="@font/sf_pro_text_bold"
+                android:text="@string/name2"
+                android:textColor="#26282C" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:fontFamily="@font/sf_pro_text_regular"
+                android:gravity="center"
+                android:text="@string/send_sticker"
+                android:textSize="@dimen/sps12" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/avatarUser"
+        android:layout_width="@dimen/dps40"
+        android:layout_height="@dimen/dps40"
+        android:layout_marginTop="@dimen/dps16"
+        android:contentDescription="@string/todo"
+        android:src="@drawable/avatar1"
+        app:layout_constraintEnd_toEndOf="@id/avatarCmt"
+        app:layout_constraintStart_toStartOf="@id/avatarCmt"
+        app:layout_constraintTop_toBottomOf="@id/layoutReaction" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="@dimen/dps10"
+        android:background="@drawable/bg_edt"
+        android:orientation="horizontal"
+        android:weightSum="6"
+        app:layout_constraintBottom_toBottomOf="@id/avatarUser"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@id/layoutReaction"
+        app:layout_constraintTop_toTopOf="@id/avatarUser">
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="4"
+            android:background="@drawable/bg_edt"
+            android:hint="@string/write_comment"
+            android:importantForAutofill="no"
+            android:inputType="text"
+            android:paddingStart="@dimen/dps12"
+            android:paddingEnd="@dimen/dps10" />
+
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/transparent"
+            android:contentDescription="@string/todo"
+            android:src="@drawable/ic_camera" />
+
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/transparent"
+            android:contentDescription="@string/todo"
+            android:src="@drawable/ic_face_smile" />
+
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
